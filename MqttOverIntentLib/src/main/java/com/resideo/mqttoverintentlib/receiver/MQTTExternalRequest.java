@@ -48,6 +48,8 @@ public class MQTTExternalRequest {
             } else if (intent.getAction().equalsIgnoreCase(ACTION_MQTT_UNSUBSCRIBE)) {
                 String owner = intent.getStringExtra(EXTRA_MQTT_RECEIVER);
                 imqttExternalRequest.onExternalRequestUnSubscribe(topic, owner);
+            } else {
+                // TODO: 1/16/21 testing 
             }
         }
     };
